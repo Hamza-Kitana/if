@@ -83,7 +83,7 @@ const Contact = () => {
                     href={info.href}
                     target={info.icon === MapPin ? "_blank" : undefined}
                     rel={info.icon === MapPin ? "noopener noreferrer" : undefined}
-                    className="block bg-gradient-to-br from-card to-card/80 rounded-2xl p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-2 border-border hover:border-primary/50 text-center cursor-pointer relative overflow-hidden"
+                    className="block bg-gradient-to-br from-card/70 to-card/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-2 border-border/60 hover:border-primary/50 text-center cursor-pointer relative overflow-hidden"
                   >
                     {/* Hover effect overlay */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
