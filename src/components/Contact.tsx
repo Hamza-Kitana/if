@@ -24,14 +24,20 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      label: t('الهاتف', 'Phone'),
+      label: t('الهاتف 1', 'Phone 1'),
       value: '+962 78 098 9098',
       href: 'tel:+962780989098',
     },
     {
+      icon: Phone,
+      label: t('الهاتف 2', 'Phone 2'),
+      value: '+962 78 221 2111',
+      href: 'tel:+962782212111',
+    },
+    {
       icon: MapPin,
       label: t('الموقع', 'Location'),
-      value: t('الزرقاء، الأردن', 'Zarqa, Jordan'),
+      value: t('رصيفة، الأردن', 'Rusaifah, Jordan'),
       href: 'https://www.google.com/maps/place/%D8%A7%D9%84%D8%A7%D8%B3%D8%B7%D9%88%D9%84+%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A+%D9%84%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1+%D8%A7%D9%84%D8%AD%D8%A7%D9%81%D9%84%D8%A7%D8%AA%E2%80%AD/@32.0155347,36.0774483,935m/data=!3m2!1e3!4b1!4m6!3m5!1s0x151b65701e2e1073:0x9df0787fea6d3864!8m2!3d32.0155347!4d36.0774483!16s%2Fg%2F11h_d77_f8?hl=en&entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D',
     },
   ];
@@ -63,8 +69,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
               return (
@@ -77,17 +83,29 @@ const Contact = () => {
                     href={info.href}
                     target={info.icon === MapPin ? "_blank" : undefined}
                     rel={info.icon === MapPin ? "noopener noreferrer" : undefined}
-                    className="block bg-card rounded-2xl p-8 md:p-10 shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105 border border-border text-center"
+                    className="block bg-gradient-to-br from-card to-card/80 rounded-2xl p-6 md:p-8 shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 border-2 border-border hover:border-primary/50 text-center cursor-pointer relative overflow-hidden"
                   >
-                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5 md:mb-6 group-hover:bg-primary/20 transition-colors">
-                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-primary group-hover:animate-float" />
+                    {/* Hover effect overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    <div className="relative z-10">
+                      <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 md:mb-5 group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110">
+                        <Icon className="w-8 h-8 md:w-10 md:h-10 text-primary group-hover:animate-float" />
+                      </div>
+                      <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-foreground group-hover:text-primary transition-colors">
+                        {info.label}
+                      </h3>
+                      <p className="text-base md:text-lg text-muted-foreground break-words group-hover:text-foreground transition-colors">
+                        {info.value}
+                      </p>
+                      
+                      {/* Click indicator */}
+                      <div className="mt-3 text-xs text-primary/60 group-hover:text-primary transition-colors">
+                        {info.icon === Phone && t('اضغط للاتصال', 'Click to call')}
+                        {info.icon === Mail && t('اضغط للمراسلة', 'Click to email')}
+                        {info.icon === MapPin && t('اضغط لفتح الخريطة', 'Click to open map')}
+                      </div>
                     </div>
-                    <h3 className="font-bold text-xl md:text-2xl mb-3 md:mb-4 text-foreground">
-                      {info.label}
-                    </h3>
-                    <p className="text-lg md:text-xl text-muted-foreground break-words">
-                      {info.value}
-                    </p>
                   </a>
                 </div>
               );

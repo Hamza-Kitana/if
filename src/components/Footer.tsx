@@ -54,17 +54,18 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">{t('تواصل', 'Contact')}</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><a href="tel:+962780989098" className="hover:text-primary">+962 78 098 9098</a></li>
-              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /><a href="mailto:ifbr.busrental@gmail.com" className="hover:text-primary">ifbr.busrental@gmail.com</a></li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><a href="tel:+962780989098" className="hover:text-primary transition-colors">+962 78 098 9098</a></li>
+              <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-primary" /><a href="tel:+962782212111" className="hover:text-primary transition-colors">+962 78 221 2111</a></li>
+              <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-primary" /><a href="mailto:ifbr.busrental@gmail.com" className="hover:text-primary transition-colors">ifbr.busrental@gmail.com</a></li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
                 <a 
                   href="https://www.google.com/maps/place/%D8%A7%D9%84%D8%A7%D8%B3%D8%B7%D9%88%D9%84+%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A+%D9%84%D8%AA%D8%A3%D8%AC%D9%8A%D8%B1+%D8%A7%D9%84%D8%AD%D8%A7%D9%81%D9%84%D8%A7%D8%AA%E2%80%AD/@32.0155347,36.0774483,935m/data=!3m2!1e3!4b1!4m6!3m5!1s0x151b65701e2e1073:0x9df0787fea6d3864!8m2!3d32.0155347!4d36.0774483!16s%2Fg%2F11h_d77_f8?hl=en&entry=ttu&g_ep=EgoyMDI1MTAyOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary"
+                  className="hover:text-primary transition-colors"
                 >
-                  {t('الزرقاء، الأردن', 'Zarqa, Jordan')}
+                  {t('رصيفة، الأردن', 'Rusaifah, Jordan')}
                 </a>
               </li>
             </ul>
