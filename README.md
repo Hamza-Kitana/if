@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# International Fleet Bus Rental Website 🚌
 
-## Project info
+شركة الأسطول الدولي لتأجير الباصات
 
-**URL**: https://lovable.dev/projects/db7066ba-85b0-416c-9084-a2ddec8c3fd2
+## About
 
-## How can I edit this code?
+A modern, bilingual (Arabic/English) website for International Fleet Bus Rental company, providing premium transportation services in Jordan.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- ✨ Modern and responsive design
+- 🌐 Bilingual support (Arabic/English)
+- 🎨 Beautiful UI with Tailwind CSS
+- ⚡ Fast performance with Vite
+- 📱 Mobile-first approach
+- 🎭 Smooth animations and transitions
+- 🚀 Built with React + TypeScript
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/db7066ba-85b0-416c-9084-a2ddec8c3fd2) and start prompting.
+## Services
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Corporate Transport**: Reliable employee transportation solutions
+- **Domestic Trips**: Comfortable bus rental for local travel
+- **International Trips**: Cross-border transportation services
+- **Private Rental**: Customized private bus rental
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/Radix UI
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **State Management**: TanStack Query
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js 18+ and npm
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone the repository
+git clone https://github.com/Hamza-Kitana/if.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navigate to project directory
+cd if
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+### Preview Production Build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run preview
+```
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── contexts/      # React contexts
+├── lib/          # Utility functions
+└── hooks/        # Custom React hooks
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Contact
 
-## How can I deploy this project?
+- **Phone**: +962 78 098 9098
+- **Email**: ifbr.busrental@gmail.com
+- **Location**: Zarqa, Jordan
 
-Simply open [Lovable](https://lovable.dev/projects/db7066ba-85b0-416c-9084-a2ddec8c3fd2) and click on Share -> Publish.
+## Developer
 
-## Can I connect a custom domain to my Lovable project?
+Developed by [Hamza Kitana](https://hamza-kitana.vercel.app/)
 
-Yes, you can!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2025 International Fleet Bus Rental. All rights reserved.
