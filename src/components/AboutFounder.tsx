@@ -106,10 +106,10 @@ const AboutFounder = () => {
 export default AboutFounder;
 
 function RainParticles() {
-  // Always animate rain regardless of reduced motion preference, per request
+  // Reduced particle count for better performance
 
-  const SmallSet = Array.from({ length: 150 });
-  const LargeSet = Array.from({ length: 120 });
+  const SmallSet = Array.from({ length: 30 });
+  const LargeSet = Array.from({ length: 20 });
 
   return (
     <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
@@ -167,16 +167,6 @@ function RainParticles() {
           />
         );
       })}
-
-      {/* Always-visible sample particles for assurance */}
-      <span
-        className="absolute rounded-full"
-        style={{ left: '12%', top: '10%', width: 18, height: 18, background: 'rgba(139,35,35,0.35)', boxShadow: '0 8px 20px rgba(0,0,0,0.15)', border: '1px solid rgba(139,35,35,0.3)' }}
-      />
-      <span
-        className="absolute rounded-full hidden sm:block"
-        style={{ right: '16%', top: '22%', width: 26, height: 26, background: 'rgba(139,35,35,0.28)', boxShadow: '0 10px 24px rgba(0,0,0,0.18)', border: '1px solid rgba(139,35,35,0.28)' }}
-      />
     </div>
   );
 }
