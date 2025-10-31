@@ -10,18 +10,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-glow">
-                <Bus className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-foreground">
-                  {t('الأسطول الدولي', 'International Fleet')}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {t('لتأجير الباصات', 'Bus Rental')}
-                </p>
-              </div>
+            <div className="mb-4">
+              <img 
+                src="/logo.png" 
+                alt="International Fleet Logo" 
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               {t('نوفّر حلول نقل احترافية للشركات والرحلات الخاصة داخل الأردن وخارجه بمعايير سلامة عالية وتجربة عميل مميزة.',
