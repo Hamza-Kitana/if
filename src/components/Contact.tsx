@@ -95,7 +95,7 @@ const Contact = () => {
                       <h3 className="font-bold text-lg md:text-xl mb-2 md:mb-3 text-foreground group-hover:text-primary transition-colors">
                         {info.label}
                       </h3>
-                      <p className="text-base md:text-lg text-muted-foreground break-words group-hover:text-foreground transition-colors">
+                      <p className={`text-muted-foreground break-words group-hover:text-foreground transition-colors ${info.icon === Mail ? 'text-sm md:text-base' : 'text-base md:text-lg'}`}>
                         {info.value}
                       </p>
                       
